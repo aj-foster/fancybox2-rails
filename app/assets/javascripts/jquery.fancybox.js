@@ -1972,7 +1972,7 @@
 	};
 
 	// Tests that need a body at doc ready
-	D.ready(function() {
+	D.on('turbolinks:load', function() {
 		var w1, w2;
 
 		if ( $.scrollbarWidth === undefined ) {
